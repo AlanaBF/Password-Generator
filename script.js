@@ -88,7 +88,7 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to give user for options for password
+// Function to give user options for password
 function getPasswordOptions(lowerCasedCharacters, upperCasedCharacters, numericCharacters, specialCharacters) {
   return {
     lower: lowerCasedCharacters,
@@ -96,13 +96,14 @@ function getPasswordOptions(lowerCasedCharacters, upperCasedCharacters, numericC
     number: numericCharacters,
     special: specialCharacters
   }
-}
-// Function for getting a random element from an array
-function getRandom(arr) {
-
-
 };
 
+// Function for getting a random element from an array
+function getRandom(arr) {
+return arr[Math.floor(Math.random()*arr.length)];
+
+};
+var arr = [lowerCasedCharacters, upperCasedCharacters, numericCharacters, specialCharacters]
 
 // Function to generate password with user input
 function generatePassword() {
@@ -164,9 +165,9 @@ if (getLowerCasedCharacters !=true && getUpperCasedCharacters !=true && getNumer
   for (var i = 0; i < userNumber; i++) {
 
   randomPassword += getPasswordChoices[Math.floor(Math.random() * getPasswordChoices.length)];
-  };
+  }
 return randomPassword;
-  };
+  }
 
 
 
