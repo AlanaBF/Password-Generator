@@ -29,7 +29,7 @@ This application runs in the browser. Follow the instructions on screen to gener
 
 Javascript code is used to run through user choices and produce a random password that the user can copy and use as a password for anything. Being randomly generated makes it more difficult for the users password to be hacked.
 
-![alt text](Random-Password-Generator.png)
+![alt text](./assets/images/Random-Password-Generator.png)
 
 ## Technology Used
 
